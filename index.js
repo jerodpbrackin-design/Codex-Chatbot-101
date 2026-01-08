@@ -1,6 +1,5 @@
 import promptSync from "prompt-sync";
 import dotenv from "dotenv";
-// const dotenv = require("dotenv");
 dotenv.config();
 
 const apiAccount = process.env.API_CLOUDFLARE_ACCT_ID;
@@ -45,5 +44,4 @@ async function run() {
 
 export default run;
 
-// If this file is executed directly, start the prompt loop.
 run().catch((err) => console.error(err));
